@@ -7,7 +7,7 @@ import Heading from "@/components/ui/heading";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black grid md:grid-cols-[65%_35%]">
+    <div className="min-h-screen bg-black grid md:grid-cols-[60%_40%]">
       <section className="h-dvh md:h-screen md:p-25 p-7 relative">
         <header className="flex items-center justify-between">
           <h3 className="font-medium text-lg">SPACE.</h3>
@@ -17,7 +17,7 @@ export default function Home() {
         </header>
         <Image src={HomeImage} alt="J" className="md:hidden my-5 rounded-xl" />
         <section className="md:absolute bottom-20 max-w-120 flex flex-col gap-4">
-          <Heading className={"text-3xl"}>
+          <Heading className={"text-4xl"}>
             The space is full of mysteries and dark things.
           </Heading>
           <p className="text-neutral-400">

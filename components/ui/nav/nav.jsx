@@ -2,7 +2,7 @@ import { Book, Home, Pencil, UserCircle } from "lucide-react";
 
 export default function Nav() {
   return (
-    <nav className="bg-neutral-900 grid grid-cols-4 w-full max-w-80 fixed left-[50%] translate-x-[-50%] bottom-20 rounded-md border border-neutral-800 overflow-hidden">
+    <nav className="bg-neutral-900 grid grid-cols-4 w-full max-w-80 fixed left-[50%] translate-x-[-50%] bottom-10 md:bottom-15 rounded-md border border-neutral-800 overflow-hidden z-1000000">
       <button className="cursor-pointer hover:bg-sky-600 transition-colors h-13 flex items-center justify-center border-r border-neutral-800">
         <Home />
       </button>
