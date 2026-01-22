@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HomeImage from "@/public/assets/images/home.jpg";
-import { Lora } from "next/font/google";
 import { Github, Sparkles } from "lucide-react";
 import Link from "next/link";
 import Heading from "@/components/ui/heading";
@@ -26,7 +25,7 @@ export default function Home() {
             spanning 400 billion miles.
           </p>
           <Link
-            href="/explore"
+            href="/home"
             className="px-10 w-fit bg-neutral-900 py-3 flex items-center gap-3 rounded-full border border-neutral-800 hover:bg-neutral-800 cursor-pointer"
           >
             <Sparkles size="20" className="text-sky-600" />

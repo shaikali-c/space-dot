@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 import { Badge } from "./badge";
 
-export default function ExploreImageElem({ data }) {
+export default function ExploreImageElem({ data, hide = false }) {
   return (
     <div className="w-full bg-transparent rounded-md">
       <div className="relative aspect-square">
@@ -16,7 +16,9 @@ export default function ExploreImageElem({ data }) {
           <Badge variant="secondary">{data.category}</Badge>
         </div>
       </div>
-      <section className="pt-3 flex items-center gap-3">
+      <section
+        className={`pt-3 items-center gap-3 ${hide ? "hidden" : "flex"}`}
+      >
         <Avatar className={"w-6.5 h-6.5"}>
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
